@@ -66,7 +66,11 @@
         <N VAR="w" USERDEFINEDTYPE="HOutflow" VALUE="0" />
         </REGION>
     </BOUNDARYCONDITIONS>
-      
+    
+    <FUNCTION NAME="Forcing">
+        <E VAR="u,v,w" VALUE="0" />
+    </FUNCTION>
+    
         <!-- Specify the initial condition -->
         <FUNCTION NAME="InitialConditions">
         <E VAR="u" VALUE="U0" />
@@ -74,15 +78,8 @@
         <E VAR="w" VALUE="W0" />  
         </FUNCTION>
 
-        <FORCING>
-            <FORCE TYPE="Field">
-            <FIELDFORCE> Forcing <FIELDFORCE/>
-            </FORCE>
-        </FORCING>
     
-    <FUNCTION NAME="Forcing">
-        <E VAR="u,v,w" VALUE="0" />
-    </FUNCTION>
+    
 
     </CONDITIONS>
     
