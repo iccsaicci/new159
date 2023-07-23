@@ -73,6 +73,12 @@
         </FUNCTION>
     </CONDITIONS>
     
+    <FORCING>
+    <FORCE TYPE="Field">
+        <FIELDFORCE> Forcing <FIELDFORCE/>
+        </FORCE>
+    </FORCING>
+    
     <FUNCTION NAME="Forcing">
     <E VAR="u,v,w" VALUE="0" />
 </FUNCTION>
