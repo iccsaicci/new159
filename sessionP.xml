@@ -9,6 +9,8 @@
             <I PROPERTY="Projection"        VALUE="Continuous" />
         </SOLVERINFO>
 	
+    
+
 	<GLOBALSYSSOLNINFO>
 	    <V VAR="u,v,w">
                 <!--I PROPERTY="GlobalSysSoln"              VALUE="XxtStaticCond" /-->
@@ -71,17 +73,20 @@
         <E VAR="v" VALUE="V0" />
         <E VAR="w" VALUE="W0" />  
         </FUNCTION>
-    </CONDITIONS>
-    
-    <FORCING>
-    <FORCE TYPE="Field">
-        <FIELDFORCE> Forcing <FIELDFORCE/>
-        </FORCE>
-    </FORCING>
+
+        <FORCING>
+            <FORCE TYPE="Field">
+            <FIELDFORCE> Forcing <FIELDFORCE/>
+            </FORCE>
+        </FORCING>
     
     <FUNCTION NAME="Forcing">
-    <E VAR="u,v,w" VALUE="0" />
-</FUNCTION>
+        <E VAR="u,v,w" VALUE="0" />
+    </FUNCTION>
+
+    </CONDITIONS>
+    
+    
 
     <FILTERS> 
         <FILTER TYPE="HistoryPoints">
